@@ -6,11 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    welcome to my bank!
-    <script src="account.js"></script>
+    <h1 class="mt-16 text-blue-500 text-center font-bold text-4xl">
+        Let's get some mooooney!!!
+    </h1>
+    <section class="flex ml-44 mt-10 mr-44">
+        <div class="inline w-1/3 bg-green-200 rounded-lg h-30 p-6">
+            <p class="text-2xl font-semibold"> Deposit</p>
+            <p class="text-xl text-cyan-500">$ <span id="money-deposit">00</span></p>
+        </div>
+        <div class="bg-orange-500 w-1/3 rounded-lg h-30 p-6 ml-5">
+            <p class="text-2xl font-semibold"> Withdraw</p>
+            <p class="text-xl text-cyan-500">$ <span id="withdraw">00</span></p>
+        </div>
+        <div class="w-1/3 bg-lime-500 rounded-lg h-30 p-6 ml-5">
+            <p class="text-2xl font-semibold"> Balance</p>
+            <p class="text-xl text-cyan-500">$ <span id="balance">2000</span></p>
+        </div>
+    </section>
+    <section class="flex ml-40 mr-40 mt-12">
+        <div class="bg-rose-400 p-8 w-1/2 h-48 rounded-lg">
+            <p class="mb-2 text-lg text-teal-200 font-medium	">Please Deposit</p>
+            <input id="deposit-input" class="p-1 mb-4 rounded w-3/4 " type="text" placeholder="$ Ammount you Deposit">
+            <br>
+            <button id="deposit-button" class="bg-lime-300 rounded-lg w-24 h-9">Deposit</button>
+        </div>
+        <div class=" bg-teal-400 text-lg p-8 w-1/2 h-48 rounded-lg ml-12">
+            <p class="mb-2 text-orange-200 font-medium	">Please Withdraw</p>
+            <input id="withdraw-input" class="p-1 mb-4 rounded w-3/4" type="text" placeholder="$ Ammount you Withdraw">
+            <br>
+            <button id="withdraw-button" class="bg-pink-300 rounded-lg w-24 h-9 ">Withdraw</button>
+        </div>
+    </section>
+    <script src="bank.js"></script>
 </body>
 
 </html>
